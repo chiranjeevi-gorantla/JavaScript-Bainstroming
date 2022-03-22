@@ -1,6 +1,8 @@
-let person = {
-    name : 'Sam',
-    age : 23
-};
+function Student(name,age){
+    console.log('this', this);
+    this.name = name,
+    this.age = age
+}
 
-console.log(person.age);
+const call = new Student('Chay',24);
+
